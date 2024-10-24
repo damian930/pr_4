@@ -1,0 +1,3 @@
+file = { SOI ~ (record ~ ("\r\n" | "\n"))* ~ EOI }
+field = { (ASCII_DIGIT | "." | "-")+ }
+record = { field ~ ("," ~ field)* }
